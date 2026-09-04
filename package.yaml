@@ -11,6 +11,6 @@ description: "Push docker images directly to remote servers without an external 
 # without ambiguity, so patterns are pinned per-arch.
 architectures:
   amd64:
-    release_pattern: "unregistry_{version}_linux_amd64.tar.gz"
+    release_pattern: "unregistry_{version_no_v}_linux_amd64.tar.gz"
   arm64:
-    release_pattern: "unregistry_{version}_linux_arm64.tar.gz"
+    release_pattern: "unregistry_{version_no_v}_linux_arm64.tar.gz"
