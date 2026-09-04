@@ -1,0 +1,16 @@
+# Package definition for unregistry
+
+package_name: unregistry
+github_repo: psviderski/unregistry
+license: Apache-2.0
+artifact_format: tar.gz
+description: "Push docker images directly to remote servers without an external registry"
+
+# Unregistry releases are named with a version prefix (e.g.
+# unregistry_0.4.3_linux_amd64.tar.gz) that auto-discovery cannot pin
+# without ambiguity, so patterns are pinned per-arch.
+architectures:
+  amd64:
+    release_pattern: "unregistry_*_linux_amd64.tar.gz"
+  arm64:
+    release_pattern: "unregistry_*_linux_arm64.tar.gz"
