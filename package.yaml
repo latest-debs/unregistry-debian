@@ -9,6 +9,8 @@ description: "Push docker images directly to remote servers without an external 
 # Unregistry releases are named with a version prefix (e.g.
 # unregistry_0.4.3_linux_amd64.tar.gz) that auto-discovery cannot pin
 # without ambiguity, so patterns are pinned per-arch.
+binary_path: "docker-pussh"
+
 architectures:
   amd64:
     release_pattern: "unregistry_{version_no_v}_linux_amd64.tar.gz"
