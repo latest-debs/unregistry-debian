@@ -16,3 +16,10 @@ architectures:
     release_pattern: "unregistry_{version_no_v}_linux_amd64.tar.gz"
   arm64:
     release_pattern: "unregistry_{version_no_v}_linux_arm64.tar.gz"
+
+# Opt into native Ubuntu builds (builder >= v.0.1a29). Packages without
+# these are served from the Debian suites via the alias fallback.
+ubuntu_distributions:
+  - jammy
+  - noble
+  - resolute
